@@ -2,10 +2,10 @@ import "./App.css";
 
 import logo from "../assets/devflix.png";
 import searchIcon from "../assets/search.svg";
+import MovieCard from "../components/movieCard/movieCard";
 
 import { useEffect } from "react";
 import { useState } from "react";
-import MovieCard from "../components/movieCard/movieCard";
 
 const App = () =>{
     const [searchTerm, setSearchTerm] = useState("");
@@ -22,8 +22,8 @@ const App = () =>{
         const response = await fetch(`${apiUrl}&s=${title}`);
         const data = await response.json();
 
-        console.log(data);
-        setMovies(data.Search);
+        console.log(data.Search); /*Retorna objetos*/
+        setMovies(data.Search); /*Retorna parâmetros*/
     }
 
     const handleKeyPress = (e) =>{
@@ -45,7 +45,6 @@ const App = () =>{
             ) : (
                 <div className="empty"><h2>Nenhum filme encontrado 😢</h2></div>
             )}
-
         </div>
     )
 }
