@@ -12,7 +12,7 @@ const App = () =>{
     const [searchTerm, setSearchTerm] = useState("");
     const [movies, setMovies] = useState([]);
 
-    const apiKey = "e4d577fa";
+    const apiKey = "a9e46a56";
     const apiUrl = `https://omdbapi.com/?apikey=${apiKey}`;
 
     useEffect(() =>{
