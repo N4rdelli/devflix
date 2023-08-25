@@ -111,11 +111,26 @@
     width: 320px;
     margin-top: 2em;
   }
+
+  .movieType{
+    font-size: 15pt;
+  }
+
+  .movieInfo img {
+    height: 220px;
+  }
+  
+  .containerMisc{
+    padding-top: 3em;
+    display: block;
+  }
+
+  .desc{
+    padding-bottom: 3.5em;
+  }
 }
 
-.desc{
-  padding-bottom: 3.5em;
-}
+
 
 @keyframes fadeIn {
   from{
